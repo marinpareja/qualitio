@@ -37,8 +37,10 @@ SITE_ID = 1
 # to load the internationalization machinery.
 USE_I18N = True
 
-DATE_FORMAT = "%y-%m-%d"
-DATETIME_FORMAT = "m-d-Y, H:i:s"
+DATE_FORMAT = "d-m-Y"
+DATETIME_FORMAT = "d-m-Y, H:i:s"
+DATE_INPUT_FORMATS = ('%d-%m-%Y',)
+
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
 MEDIA_ROOT = os.path.join(PROJECT_PATH, 'static')
@@ -114,6 +116,7 @@ INSTALLED_APPS = (
     'pagination',
     'compressor',
     'dbtemplates',
+    'tastypie',
 
     'qualitio.core',
     'qualitio.require',
@@ -122,6 +125,7 @@ INSTALLED_APPS = (
     'qualitio.execute',
     'qualitio.store',
     'qualitio.filter',
+    'qualitio.glossary',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = ("django.contrib.auth.context_processors.auth",
