@@ -14,7 +14,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(PROJECT_PATH, 'data/data.sqlite'),
+        'NAME': os.path.join(PROJECT_PATH, 'data.sqlite'),
     }
 }
 
@@ -79,7 +79,7 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'qualitio.urls'
 
-LOGIN_REDIRECT_URL = "/require/"
+LOGIN_REDIRECT_URL = "/account/"
 LOGIN_URL = '/login/'
 
 LOGIN_EXEMPT_URLS = (
@@ -90,6 +90,7 @@ LOGIN_EXEMPT_URLS = (
     r'^complete/*',
     r'^report/external/*',
     r'^__debug__/.*',
+    r'^api/.*',
     )
 
 TEMPLATE_DIRS = (
@@ -105,6 +106,8 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'django.contrib.webdesign',
+    'django.contrib.markup',
+    'django.contrib.humanize',
 
     'mptt',
     'debug_toolbar',
@@ -117,8 +120,10 @@ INSTALLED_APPS = (
     'compressor',
     'dbtemplates',
     'tastypie',
+    'articles',
 
     'qualitio.core',
+    'qualitio.core.custommodel',  # iternal core django application
     'qualitio.require',
     'qualitio.report',
     'qualitio.projects',
@@ -126,6 +131,8 @@ INSTALLED_APPS = (
     'qualitio.store',
     'qualitio.filter',
     'qualitio.glossary',
+
+    'qualitio.customizations',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = ("django.contrib.auth.context_processors.auth",
