@@ -526,7 +526,10 @@ class Test02Authview(BaseSeleniumTestCase):
 
 
 class Test03Gmail(BaseSeleniumTestCase):
-
+    def setUp(self):
+        self.verificationErrors = []
+        self.selenium = selenium("localhost", 4444, "*chrome", "http://127.0.0.1:8000/")
+        self.selenium.start()
     
     def test_03_gmail(self):
         sel = self.selenium
@@ -557,24 +560,25 @@ class Test03Gmail(BaseSeleniumTestCase):
         sel.wait_for_page_to_load("30000")
         for i in range(60):
             try:
-                if "qualitio: requirements" == sel.get_title(): break
+                if sel.is_element_present("css=h1"): break
             except: pass
             time.sleep(1)
         else: self.fail("time out")
-        for i in range(60):
-            try:
-                if "qualitio: requirements" == sel.get_title(): break
-            except: pass
-            time.sleep(1)
-        else: self.fail("time out")
-        self.assertEqual("qualitio: requirements", sel.get_title())
-        for i in range(60):
-            try:
-                if sel.is_text_present("JackPack"): break
-            except: pass
-            time.sleep(1)
-        else: self.fail("time out")
-        try: self.failUnless(sel.is_text_present("JackPack"))
+        try: self.failUnless(sel.is_element_present("css=h1"))
+        except AssertionError, e: self.verificationErrors.append(str(e))
+        try: self.failUnless(sel.is_element_present("//div[@id='account']/div/div[2]/div/h1"))
+        except AssertionError, e: self.verificationErrors.append(str(e))
+        try: self.failUnless(sel.is_element_present("link=require"))
+        except AssertionError, e: self.verificationErrors.append(str(e))
+        try: self.failUnless(sel.is_element_present("link=store"))
+        except AssertionError, e: self.verificationErrors.append(str(e))
+        try: self.failUnless(sel.is_element_present("link=execute"))
+        except AssertionError, e: self.verificationErrors.append(str(e))
+        try: self.failUnless(sel.is_element_present("link=report"))
+        except AssertionError, e: self.verificationErrors.append(str(e))
+        try: self.failUnless(sel.is_element_present("link=admin"))
+        except AssertionError, e: self.verificationErrors.append(str(e))
+        try: self.failUnless(sel.is_element_present("link=account"))
         except AssertionError, e: self.verificationErrors.append(str(e))
         try: self.failUnless(sel.is_element_present("link=Log out"))
         except AssertionError, e: self.verificationErrors.append(str(e))
@@ -586,94 +590,23 @@ class Test03Gmail(BaseSeleniumTestCase):
             except: pass
             time.sleep(1)
         else: self.fail("time out")
-        for i in range(60):
-            try:
-                if "qualitio: login" == sel.get_title(): break
-            except: pass
-            time.sleep(1)
-        else: self.fail("time out")
-        self.assertEqual("qualitio: login", sel.get_title())
-        try: self.failUnless(sel.is_element_present("//div[@id='openid']/div[2]/a[1]/span"))
+        sel.select_window("null")
+        try: self.failUnless(sel.is_element_present("css=label.infield"))
         except AssertionError, e: self.verificationErrors.append(str(e))
-        sel.click("//div[@id='openid']/div[2]/a[1]/span")
-        sel.wait_for_page_to_load("30000")
-        for i in range(60):
-            try:
-                if sel.is_text_present("qualitio requirements"): break
-            except: pass
-            time.sleep(1)
-        else: self.fail("time out")
-        for i in range(60):
-            try:
-                if "qualitio: requirements" == sel.get_title(): break
-            except: pass
-            time.sleep(1)
-        else: self.fail("time out")
-        self.assertEqual("qualitio: requirements", sel.get_title())
-        try: self.failUnless(sel.is_text_present("Welcome, JackPack"))
+        try: self.failUnless(sel.is_element_present("//div[@id='main']/div/form/fieldset/label[2]"))
         except AssertionError, e: self.verificationErrors.append(str(e))
     
-
-
-class Test04Gmail(BaseSeleniumTestCase):
-
-    
-    def test_04_gmail(self):
-        sel = self.selenium
-        sel.open("/login/?next=/")
-        self.assertEqual("qualitio: login", sel.get_title())
-        sel.open("https://www.google.com/accounts/ServiceLogin?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Fui%3Dhtml%26zy%3Dl&bsv=llya694le36z&ss=1&scc=1&ltmpl=default&ltmplcache=2&hl=pl")
-        for i in range(60):
-            try:
-                if "Gmail: innowacyjna poczta Google" == sel.get_title(): break
-            except: pass
-            time.sleep(1)
-        else: self.fail("time out")
-        self.assertEqual("Gmail: innowacyjna poczta Google", sel.get_title())
-        for i in range(60):
-            try:
-                if sel.is_element_present("Email"): break
-            except: pass
-            time.sleep(1)
-        else: self.fail("time out")
-        sel.type("Email", "qualitio1")
-        sel.type("Passwd", "testqual")
-        try: self.failUnless(sel.is_element_present("signIn"))
-        except AssertionError, e: self.verificationErrors.append(str(e))
-        sel.click("signIn")
-        sel.wait_for_page_to_load("30000")
-        sel.open("/login/?next=/")
-        for i in range(60):
-            try:
-                if sel.is_text_present("qualitio"): break
-            except: pass
-            time.sleep(1)
-        else: self.fail("time out")
-        for i in range(60):
-            try:
-                if sel.is_element_present("//div[@id='openid']/div[2]/a[1]/span"): break
-            except: pass
-            time.sleep(1)
-        else: self.fail("time out")
-        sel.click("//div[@id='openid']/div[2]/a[1]/span")
-        sel.wait_for_page_to_load("30000")
-        for i in range(60):
-            try:
-                if "qualitio: requirements" == sel.get_title(): break
-            except: pass
-            time.sleep(1)
-        else: self.fail("time out")
-        for i in range(60):
-            try:
-                if sel.is_text_present("requirements"): break
-            except: pass
-            time.sleep(1)
-        else: self.fail("time out")
-        self.assertEqual("qualitio: requirements", sel.get_title())
+    def tearDown(self):
+        self.selenium.stop()
+        self.assertEqual([], self.verificationErrors)
 
 
 class Test05Yahoo(BaseSeleniumTestCase):
 
+    def setUp(self):
+        self.verificationErrors = []
+        self.selenium = selenium("localhost", 4444, "*chrome", "http://127.0.0.1:8000/")
+        self.selenium.start()
     
     def test_05_yahoo(self):
         sel = self.selenium
@@ -718,26 +651,28 @@ class Test05Yahoo(BaseSeleniumTestCase):
         except AssertionError, e: self.verificationErrors.append(str(e))
         sel.click(".save")
         sel.wait_for_page_to_load("30000")
+        sel.select_window("null")
         for i in range(60):
             try:
-                if "qualitio: requirements" == sel.get_title(): break
+                if sel.is_element_present("css=div.application-view-content.panel"): break
             except: pass
             time.sleep(1)
         else: self.fail("time out")
-        for i in range(60):
-            try:
-                if "qualitio: requirements" == sel.get_title(): break
-            except: pass
-            time.sleep(1)
-        else: self.fail("time out")
-        self.assertEqual("qualitio: requirements", sel.get_title())
-        for i in range(60):
-            try:
-                if sel.is_text_present("TomPlak"): break
-            except: pass
-            time.sleep(1)
-        else: self.fail("time out")
-        try: self.failUnless(sel.is_text_present("TomPlak"))
+        try: self.failUnless(sel.is_element_present("css=h1"))
+        except AssertionError, e: self.verificationErrors.append(str(e))
+        try: self.failUnless(sel.is_element_present("//div[@id='account']/div/div[2]/div"))
+        except AssertionError, e: self.verificationErrors.append(str(e))
+        try: self.failUnless(sel.is_element_present("link=require"))
+        except AssertionError, e: self.verificationErrors.append(str(e))
+        try: self.failUnless(sel.is_element_present("link=store"))
+        except AssertionError, e: self.verificationErrors.append(str(e))
+        try: self.failUnless(sel.is_element_present("link=execute"))
+        except AssertionError, e: self.verificationErrors.append(str(e))
+        try: self.failUnless(sel.is_element_present("link=report"))
+        except AssertionError, e: self.verificationErrors.append(str(e))
+        try: self.failUnless(sel.is_element_present("link=admin"))
+        except AssertionError, e: self.verificationErrors.append(str(e))
+        try: self.failUnless(sel.is_element_present("link=account"))
         except AssertionError, e: self.verificationErrors.append(str(e))
         try: self.failUnless(sel.is_element_present("link=Log out"))
         except AssertionError, e: self.verificationErrors.append(str(e))
@@ -749,34 +684,10 @@ class Test05Yahoo(BaseSeleniumTestCase):
             except: pass
             time.sleep(1)
         else: self.fail("time out")
-        for i in range(60):
-            try:
-                if "qualitio: login" == sel.get_title(): break
-            except: pass
-            time.sleep(1)
-        else: self.fail("time out")
-        self.assertEqual("qualitio: login", sel.get_title())
-        try: self.failUnless(sel.is_element_present("//div[@id='openid']/div[2]/a[2]/span"))
-        except AssertionError, e: self.verificationErrors.append(str(e))
-        sel.click("//div[@id='openid']/div[2]/a[2]/span")
-        sel.wait_for_page_to_load("30000")
-        for i in range(60):
-            try:
-                if sel.is_text_present("qualitio requirements"): break
-            except: pass
-            time.sleep(1)
-        else: self.fail("time out")
-        for i in range(60):
-            try:
-                if "qualitio: requirements" == sel.get_title(): break
-            except: pass
-            time.sleep(1)
-        else: self.fail("time out")
-        self.assertEqual("qualitio: requirements", sel.get_title())
-        try: self.failUnless(sel.is_text_present("Welcome, TomPlak"))
-        except AssertionError, e: self.verificationErrors.append(str(e))
     
-
+    def tearDown(self):
+        self.selenium.stop()
+        self.assertEqual([], self.verificationErrors)
 
 class Test1HeaderpageVerifytext(BaseSeleniumTestCase):
     
@@ -3919,12 +3830,30 @@ class Test24Dependblock(BaseSeleniumTestCase):
 
 
 class Test25Verifylinks(BaseSeleniumTestCase):
+    def setUp(self):
+        self.verificationErrors = []
+        self.selenium = selenium("localhost", 4444, "*chrome", "http://127.0.0.1:8000/")
+        self.selenium.start()
     
     def test_25_verifylinks(self):
-        self.login() 
         sel = self.selenium
         sel.open("/require/#requirement/1/details/")
+        sel.click("id_username")
+        sel.type("id_username", "admin")
+        sel.type("id_password", "admin")
+        sel.click("//input[@value='login']")
+        sel.wait_for_page_to_load("30000")
+        for i in range(60):
+            try:
+                if sel.is_element_present("css=div.logo"): break
+            except: pass
+            time.sleep(1)
+        else: self.fail("time out")
+        try: self.failUnless(sel.is_element_present("css=div.logo"))
+        except AssertionError, e: self.verificationErrors.append(str(e))
         self.assertEqual("qualitio: requirements", sel.get_title())
+        sel.click("link=require")
+        sel.wait_for_page_to_load("30000")
         for i in range(60):
             try:
                 if sel.is_element_present("link=MeeGo"): break
@@ -4169,14 +4098,23 @@ class Test25Verifylinks(BaseSeleniumTestCase):
         sel.click("//div[@id='application-view']/div[4]/div/div[1]/div[2]/table/tbody/tr[2]/td[3]/a")
         for i in range(60):
             try:
-                if sel.is_text_present("exact:requirement: IVI"): break
+                if sel.is_element_present("link=n900"): break
             except: pass
             time.sleep(1)
         else: self.fail("time out")
-        try: self.failUnless(sel.is_text_present("exact:requirement: IVI"))
+        try: self.failUnless(sel.is_element_present("link=n900"))
         except AssertionError, e: self.verificationErrors.append(str(e))
-        try: self.failUnless(sel.is_text_present("full name: /MeeGo/IVI"))
+        for i in range(60):
+            try:
+                if sel.is_element_present("link=11"): break
+            except: pass
+            time.sleep(1)
+        else: self.fail("time out")
+        try: self.failUnless(sel.is_element_present("link=11"))
         except AssertionError, e: self.verificationErrors.append(str(e))
+        try: self.failUnless(sel.is_text_present("IVI"))
+        except AssertionError, e: self.verificationErrors.append(str(e))
+        self.assertEqual("qualitio: requirements", sel.get_title())
         try: self.failUnless(sel.is_text_present("directory: /MeeGo/"))
         except AssertionError, e: self.verificationErrors.append(str(e))
         sel.click("link=MeeGo")
@@ -4324,7 +4262,10 @@ class Test25Verifylinks(BaseSeleniumTestCase):
             time.sleep(1)
         else: self.fail("time out")
         sel.click("css=li#1_requirement ins")
-
+    
+    def tearDown(self):
+        self.selenium.stop()
+        self.assertEqual([], self.verificationErrors)
 
 class Test32Samename(BaseSeleniumTestCase):
     
@@ -4516,12 +4457,19 @@ class Test32Samename(BaseSeleniumTestCase):
 
 
 class Test45FilterVerify(BaseSeleniumTestCase):
-
+    def setUp(self):
+        self.verificationErrors = []
+        self.selenium = selenium("localhost", 4444, "*chrome", "http://127.0.0.1:8000/")
+        self.selenium.start()
     
     def test_45_filter_verify(self):
-        self.login() 
         sel = self.selenium
         sel.open("/require/#requirement/1/details/")
+        sel.click("id_username")
+        sel.type("id_username", "admin")
+        sel.type("id_password", "admin")
+        sel.click("//input[@value='login']")
+        sel.wait_for_page_to_load("30000")
         self.assertEqual("qualitio: requirements", sel.get_title())
         for i in range(60):
             try:
@@ -4555,9 +4503,7 @@ class Test45FilterVerify(BaseSeleniumTestCase):
         except AssertionError, e: self.verificationErrors.append(str(e))
         try: self.assertEqual("Reset query", sel.get_text("//div[@id='application-view']/form/div/div/a/span"))
         except AssertionError, e: self.verificationErrors.append(str(e))
-        try: self.failUnless(sel.is_element_present("id_control-new-group-add_group"))
-        except AssertionError, e: self.verificationErrors.append(str(e))
-        try: self.failUnless(sel.is_text_present("add group name parent modified_time alias release_target created_time path description is_assigned_to_testcase is_assigned_to_testcase_with_steps"))
+        try: self.failUnless(sel.is_text_present("add group Created time range Name Modified time range Release target range Modified time Alias Release target Parent Created time Path Description Is assigned to TC Requirement"))
         except AssertionError, e: self.verificationErrors.append(str(e))
         try: self.failUnless(sel.is_element_present("//div[@id='application-view']/form/div[2]/div[1]/div[2]/span[1]"))
         except AssertionError, e: self.verificationErrors.append(str(e))
@@ -4585,7 +4531,7 @@ class Test45FilterVerify(BaseSeleniumTestCase):
         except AssertionError, e: self.verificationErrors.append(str(e))
         try: self.failUnless(sel.is_text_present("Release target"))
         except AssertionError, e: self.verificationErrors.append(str(e))
-        sel.select("id_control-new-group-add_group", "label=name")
+        sel.select("id_control-new-group-add_group", "label=Name")
         sel.wait_for_page_to_load("30000")
         for i in range(60):
             try:
@@ -4595,7 +4541,7 @@ class Test45FilterVerify(BaseSeleniumTestCase):
         else: self.fail("time out")
         for i in range(60):
             try:
-                if sel.is_element_present("id_1-0-1-lookup"): break
+                if sel.is_element_present("id_1-1-1-lookup"): break
             except: pass
             time.sleep(1)
         else: self.fail("time out")
@@ -4603,19 +4549,19 @@ class Test45FilterVerify(BaseSeleniumTestCase):
         except AssertionError, e: self.verificationErrors.append(str(e))
         try: self.assertEqual("Name", sel.get_text("//div[@id='application-view']/form/div/div[1]/div[1]/div[1]/label"))
         except AssertionError, e: self.verificationErrors.append(str(e))
-        try: self.failUnless(sel.is_element_present("id_1-0-1-lookup"))
+        try: self.failUnless(sel.is_element_present("id_1-1-1-lookup"))
         except AssertionError, e: self.verificationErrors.append(str(e))
         try: self.failUnless(sel.is_text_present("contains icontains startswith istartswith exact iexact"))
         except AssertionError, e: self.verificationErrors.append(str(e))
-        try: self.failUnless(sel.is_element_present("id_1-0-1-q"))
+        try: self.failUnless(sel.is_element_present("id_1-1-1-q"))
         except AssertionError, e: self.verificationErrors.append(str(e))
         try: self.failUnless(sel.is_element_present("//div[@id='application-view']/form/div/div[1]/div[1]/div[4]/div/span"))
         except AssertionError, e: self.verificationErrors.append(str(e))
         try: self.failUnless(sel.is_text_present("Remove"))
         except AssertionError, e: self.verificationErrors.append(str(e))
-        try: self.failUnless(sel.is_element_present("control-remove-filter-1-0-1"))
+        try: self.failUnless(sel.is_element_present("control-remove-filter-1-1-1"))
         except AssertionError, e: self.verificationErrors.append(str(e))
-        sel.select("id_1-control-new-criteria-add_field_filter", "label=parent")
+        sel.select("id_1-control-new-criteria-add_field_filter", "label=Parent")
         sel.wait_for_page_to_load("30000")
         for i in range(60):
             try:
@@ -4633,7 +4579,7 @@ class Test45FilterVerify(BaseSeleniumTestCase):
         except AssertionError, e: self.verificationErrors.append(str(e))
         try: self.failUnless(sel.is_element_present("id_1-1-1-q"))
         except AssertionError, e: self.verificationErrors.append(str(e))
-        try: self.failUnless(sel.is_element_present("//div[@id='application-view']/form/div/div[1]/div[1]/div[3]/div/span"))
+        try: self.failUnless(sel.is_element_present("//input[@value='Search']"))
         except AssertionError, e: self.verificationErrors.append(str(e))
         try: self.failUnless(sel.is_element_present("//div[@id='application-view']/form/div/div[2]/a/span"))
         except AssertionError, e: self.verificationErrors.append(str(e))
@@ -4661,6 +4607,9 @@ class Test45FilterVerify(BaseSeleniumTestCase):
         else: self.fail("time out")
         self.assertEqual("qualitio: requirements", sel.get_title())
     
+    def tearDown(self):
+        self.selenium.stop()
+        self.assertEqual([], self.verificationErrors)
 
 if __name__ == "__main__":
     unittest.main()
