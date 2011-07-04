@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://127.0.0.1:8000/" />
+<title>Newreq</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Newreq</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/require/#requirement/1/details/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>exact:qualitio: requirements</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=MeeGo</td>
+	<td>MeeGo</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=MeeGo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li#1_requirement ins</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=TV</td>
+	<td>TV</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=TV</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=TV</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=TV</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>exact:requirement: TV</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div#application-view-footer div a span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div#application-view-header h1</td>
+	<td>requirement</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id_name</td>
+	<td>new requirement 1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id_release_target</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div#ui-datepicker-div div div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>release_target_wrapper</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>requirement</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>Executed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=MeeGo</td>
+	<td>MeeGo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=MeeGo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li#1_requirement ins</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=TV</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>TV</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=TV</td>
+	<td>TV</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=TV</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li#4_requirement ins</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=new requirement 1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=new requirement 1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='application-view']/div[4]/div/div[1]/div[1]/div/table/thead/tr/th[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='application-view']/div[4]/div/div[1]/div[1]/div/table/thead/tr/th[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='application-view']/div[4]/div/div[1]/div[2]/table/tbody/tr[3]/td[3]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='application-view']/div[4]/div/div[1]/div[2]/table/tbody/tr[3]/td[3]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>full name:</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>exact:directory:</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>exact:description:</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>/MeeGo/TV/new requirement 1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>exact:requirement: new requirement 1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=history</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=history</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div#application-view-menu span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>date</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>user</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Changed name, changed parent and changed release_target.</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

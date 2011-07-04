@@ -58,7 +58,7 @@ if __name__ == "__main__":
 
     (options, args) = parser.parse_args()
 
-    settings['hostname'] = 'http://127.0.0.1:8001'
+    settings['hostname'] = 'http://127.0.0.1:8000'
     settings['username'] = options.username
     settings['password'] = options.password
     settings['browser'] = options.browser
@@ -72,7 +72,7 @@ if __name__ == "__main__":
         try:
             selenium = subprocess.Popen(['java',
                                          '-jar',
-                                         'selenium-server.jar'],
+                                         'selenium-server-standalone-2.0rc2.jar'],
                                         stdout=out, stderr=subprocess.STDOUT)
 
 

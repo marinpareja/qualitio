@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://127.0.0.1:8000/" />
+<title>Test39ExecAddbug</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test39ExecAddbug</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/require/#requirement/1/details/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>exact:qualitio: requirements</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>qualitio requirements</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=execute</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>exact:qualitio: execute</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>qualitio execute</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=TestRun directory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li#1_testrundirectory ins</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=TestRun 1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=TestRun 2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=TestRun 1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>test run: TestRun 1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>full name: /TestRun directory/TestRun 1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_testrun-notes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeKeys</td>
+	<td>//form[@id='testrun_form']/div[3]/div[2]/div/div/div[2]/div/input</td>
+	<td>close navi</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Close navigation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='testrun_form']/div[3]/div[2]/div/div/div[1]/div[1]/div/table/thead/tr/th[1]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_available_test_cases-0-action</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>Executed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_testrun-notes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a[href=&quot;#testrun/1/execute/&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>select-all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>id</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>path</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>exact:Search:</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>/MeeGo Netbook/MeeGo IVI BAT/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Close navigation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>test run: TestRun 1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//tr[@id='testcaserun_1']/td[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='testcaserun_1']/td[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>select-all</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>id</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>test case: Close navigation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>test case: Close navigation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id_bugs</td>
+	<td>1234</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[value='add']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_bugs-0-DELETE</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=1234</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=1234</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>we need default style for the html 4 style tags</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>VERIFIED</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>FIXED</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id_bugs</td>
+	<td>1235</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[value='add']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=1235</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=1235</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link={feature} we don</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>DUPLICATE</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=TestRun 2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>test run: TestRun 2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>full name: /TestRun directory/TestRun 2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_testrun-notes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeKeys</td>
+	<td>//form[@id='testrun_form']/div[3]/div[2]/div/div/div[2]/div/input</td>
+	<td>close navigation</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=/MeeGo Netbook/MeeGo IVI BAT/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id_available_test_cases-0-action</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_available_test_cases-0-action</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>Executed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_testrun-notes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='application-view-menu']/a[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>test run: TestRun 2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Close navigation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>/MeeGo Netbook/MeeGo IVI BAT/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Close navigation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='testcaserun_2']/td[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>test case: Close navigation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>origin test case:</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=1234</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=we need default style for the html 4 style tags</td>
+	<td>we need default style for the html 4 style tags</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>VERIFIED</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>FIXED</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=1235</td>
+	<td>1235</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link={feature} we don</td>
+	<td>{feature} we don</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>DUPLICATE</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id_bugs</td>
+	<td>1236</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[value='add']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=1236</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_bugs-0-DELETE</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=1236</td>
+	<td>1236</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id_bugs-0-DELETE</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_bugs-0-DELETE</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[value='remove']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>No data available in table</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>No data available in table</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=TestRun 1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>test run: TestRun 1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>full name:</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='application-view-menu']/a[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>/MeeGo Netbook/MeeGo IVI BAT/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Close navigation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='testcaserun-list']/div[2]/select</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>#1235</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>#1234</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='testcaserun_1']/td[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>test case: Close navigation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>origin test case:</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='testcaserun-remove-bug-form']/div[2]/div[1]/div[1]/div/table/thead/tr/th[1]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_bugs-0-DELETE</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_bugs-1-DELETE</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[value='remove']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='testcaserun-remove-bug-form']/div[2]/div[1]/div[2]/table/tbody/tr/td</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>No data available in table</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='testcaserun-remove-bug-form']/div[2]/div[1]/div[1]/div/table/thead/tr/th[1]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='testcaserun-remove-bug-form']/div[2]/div[1]/div[2]/table/tbody/tr/td</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>No data available in table</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_testrun-notes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id_connected_test_cases-0-DELETE</td>
+	<td>off</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id_connected_test_cases-0-DELETE</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>Executed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>Executed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_testrun-notes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=TestRun 2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>test run: TestRun 2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_testrun-notes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id_connected_test_cases-0-DELETE</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id_connected_test_cases-0-DELETE</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>Executed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>Executed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_testrun-notes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=details</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=details</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>test run: TestRun 2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>No data available in table</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>No data available in table</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="Test01Loginrequire">Test01Loginrequire</a></td></tr>
+<tr><td><a href="Test02Authview">Test02Authview</a></td></tr>
+<tr><td><a href="Test03Gmail">Test03Gmail</a></td></tr>
+<tr><td><a href="Test04Gmail">Test04Gmail</a></td></tr>
+<tr><td><a href="Test05Yahoo">Test05Yahoo</a></td></tr>
+<tr><td><a href="Test10ModreqDepend">Test10ModreqDepend</a></td></tr>
+<tr><td><a href="Test11Subrequir">Test11Subrequir</a></td></tr>
+<tr><td><a href="Test12DetailsVerify">Test12DetailsVerify</a></td></tr>
+<tr><td><a href="Test13EditVerify">Test13EditVerify</a></td></tr>
+<tr><td><a href="Test14TestcasesVerify">Test14TestcasesVerify</a></td></tr>
+<tr><td><a href="Test1HeaderpageVerifytext">Test1HeaderpageVerifytext</a></td></tr>
+<tr><td><a href="Test20SetTree">Test20SetTree</a></td></tr>
+<tr><td><a href="Test23TreeNewreq">Test23TreeNewreq</a></td></tr>
+<tr><td><a href="Test24Dependblock">Test24Dependblock</a></td></tr>
+<tr><td><a href="Test25Verifylinks">Test25Verifylinks</a></td></tr>
+<tr><td><a href="Test2TreeVerifyelements">Test2TreeVerifyelements</a></td></tr>
+<tr><td><a href="Test32Samename">Test32Samename</a></td></tr>
+<tr><td><a href="Test3Newreq">Test3Newreq</a></td></tr>
+<tr><td><a href="Test45FilterVerify">Test45FilterVerify</a></td></tr>
+<tr><td><a href="Test4Modreq">Test4Modreq</a></td></tr>
+<tr><td><a href="Test5TestcasesDel">Test5TestcasesDel</a></td></tr>
+<tr><td><a href="Test6TestcasesAdd">Test6TestcasesAdd</a></td></tr>
+<tr><td><a href="Test7ModreqParent">Test7ModreqParent</a></td></tr>
+<tr><td><a href="Test8ModreqReltarg">Test8ModreqReltarg</a></td></tr>
+<tr><td><a href="Test9ModreqDesript">Test9ModreqDesript</a></td></tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://127.0.0.1:8000/" />
+<title>equal</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">equal</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/require/#requirement/1/details/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=MeeGo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>exact:qualitio: requirements</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=div.logo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.logo</td>
+	<td>qualitio requirements</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=#notification.notify-wrapper-oneattime</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=require</td>
+	<td>require</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=store</td>
+	<td>store</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=execute</td>
+	<td>execute</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=admin</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=report</td>
+	<td>report</td>
+</tr>
+<!--
+<tr>
+	<td>verifyText</td>
+	<td>link=execute</td>
+	<td>execute</td>
+</tr>
+-->
+<!--
+<tr>
+	<td>verifyText</td>
+	<td>link=report</td>
+	<td>report</td>
+</tr>
+-->
+<!--
+<tr>
+	<td>verifyText</td>
+	<td>link=settings</td>
+	<td>settings</td>
+</tr>
+-->
+<tr>
+	<td>verifyText</td>
+	<td>link=admin</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=#application-menu</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#application-menu ul li</td>
+	<td>browse</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=filter</td>
+	<td>filter</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Welcome, admin.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Log out</td>
+	<td></td>
+</tr>
+<!--
+<tr>
+	<td>verifyText</td>
+	<td>css=#application-menu ul li a</td>
+	<td>filter</td>
+</tr>
+-->
+</tbody></table>
+</body>
+</html>

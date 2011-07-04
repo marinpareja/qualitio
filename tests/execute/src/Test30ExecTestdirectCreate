@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://127.0.0.1:8000/" />
+<title>Test17StoreTestdirectCreate</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test17StoreTestdirectCreate</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/require/#requirement/1/details/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>exact:qualitio: requirements</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=execute</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=execute</td>
+	<td>execute</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=execute</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>exact:qualitio: execute</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=TestRun directory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=TestRun directory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>test run directory: TestRun directory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>test run directory: TestRun directory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div#application-view-footer div a:nth-child(2)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>test run directory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id_name</td>
+	<td>testrun subdirectory</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Description</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id_description</td>
+	<td>Description<br />description</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name='Executed'][value='Save']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=details</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>test run directory : testrun subdirectory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>test run directory : testrun subdirectory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=details</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>test run directory: testrun subdirectory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>full name: /TestRun directory/testrun subdirectory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>full name: /TestRun directory/testrun subdirectory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Description<br />description</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=TestRun directory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>test run directory: TestRun directory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='application-view']/div[3]/div[4]/div[1]/div[2]/table/tbody/tr[1]/td[4]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='application-view']/div[3]/div[4]/div[1]/div[2]/table/tbody/tr[1]/td[4]/a</td>
+	<td>testrun subdirectory</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='application-view']/div[3]/div[4]/div[1]/div[2]/table/tbody/tr[2]/td[4]/a</td>
+	<td>TestRun 1</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='application-view']/div[3]/div[4]/div[1]/div[2]/table/tbody/tr[3]/td[4]/a</td>
+	<td>TestRun 2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='application-view']/div[3]/div[4]/div[1]/div[2]/table/tbody/tr[1]/td[4]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>test run directory: testrun subdirectory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id_name</td>
+	<td>testrun subdirectory</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id_description</td>
+	<td>Description description</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=history</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=history</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>date</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>user</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>comment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Changed name, changed parent and changed description.</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://127.0.0.1:8000/" />
+<title>Test33StoreSamename</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test33StoreSamename</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/require/#requirement/1/details/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>exact:qualitio: requirements</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=MeeGo</td>
+	<td>MeeGo</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=execute</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>exact:qualitio: execute</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=TestRun directory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>test run directory: TestRun directory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>details</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li#1_testrundirectory ins</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=TestRun 1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=TestRun 2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=TestRun 2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>test run: TestRun 2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//form[@id='testrun_form']/div[3]/div[2]/div/div/div[2]/div/input</td>
+	<td>Open</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Open navigation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id_available_test_cases-1-action</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>Executed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>test run: TestRun 2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>full name: /TestRun directory/TestRun 2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>full name: /TestRun directory/TestRun 2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>test run: TestRun 2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Open navigation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Open navigation</td>
+	<td>Open navigation</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//form[@id='testrun_form']/div[3]/div[1]/div/div/div[2]/div/input</td>
+	<td>Open</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id_connected_test_cases-0-DELETE</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>Executed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>No data available in table</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

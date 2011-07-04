@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="Test15StoreTestdirectVerify">Test15StoreTestdirectVerify</a></td></tr>
+<tr><td><a href="Test16StoreTestcaseVerify">Test16StoreTestcaseVerify</a></td></tr>
+<tr><td><a href="Test17StoreTestdirectCreate">Test17StoreTestdirectCreate</a></td></tr>
+<tr><td><a href="Test18StoreTestcaseCreate">Test18StoreTestcaseCreate</a></td></tr>
+<tr><td><a href="Test19StoreTestcaseDisplay">Test19StoreTestcaseDisplay</a></td></tr>
+<tr><td><a href="Test21StoreTreeVerify">Test21StoreTreeVerify</a></td></tr>
+<tr><td><a href="Test22StoreTreeVerifyEdit">Test22StoreTreeVerifyEdit</a></td></tr>
+<tr><td><a href="Test26StoreTestdirectModify">Test26StoreTestdirectModify</a></td></tr>
+<tr><td><a href="Test27StoreTestcaseModify">Test27StoreTestcaseModify</a></td></tr>
+<tr><td><a href="Test33StoreSamename">Test33StoreSamename</a></td></tr>
+<tr><td><a href="Test34StoreSamename">Test34StoreSamename</a></td></tr>
+<tr><td><a href="Test35StoreTestcaseStatus">Test35StoreTestcaseStatus</a></td></tr>
+</tbody></table>
+</body>
+</html>

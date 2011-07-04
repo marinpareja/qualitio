@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://127.0.0.1:8000/" />
+<title>TestcasesDel</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TestcasesDel</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/require/#requirement/13/details/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>qualitio requirements</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=MeeGo</td>
+	<td>MeeGo</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=MeeGo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li#1_requirement ins</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=TV</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=TV</td>
+	<td>TV</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=TV</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li#4_requirement ins</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=MeeGo Handset test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=MeeGo Handset test</td>
+	<td>MeeGo Handset test</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=MeeGo Handset test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=MeeGo Handset test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div#application-view-header h1</td>
+	<td>requirement: MeeGo Handset test</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div#application-view-header h1</td>
+	<td>requirement: MeeGo Handset test</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=test cases</td>
+	<td>test cases</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=test cases</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=test cases</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=input[value='3']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=input[value='3']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=a#remove-testcases-button span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[value='3']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a#remove-testcases-button span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='testcases_connect_form']/div[2]/div/div/div[1]/div[2]/table/tbody/tr/td</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>No data available in table</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>Executed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>Executed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>Executed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=input[type='text']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=input[type='text']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=details</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=details</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>exact:requirement: MeeGo Handset test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>full name: /MeeGo/TV/MeeGo Handset test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>full name: /MeeGo/TV/MeeGo Handset test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>exact:requirement: MeeGo Handset test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='application-view']/div[5]/div/div[1]/div[2]/table/tbody/tr/td</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='application-view']/div[5]/div/div[1]/div[2]/table/tbody/tr/td</td>
+	<td>No data available in table</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='application-view']/div[5]/div/div[2]</td>
+	<td>Showing 0 to 0 of 0 entries</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=history</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=history</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>date</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>user</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Deleted test case &quot;3: /meego netbook/testcase&quot;.</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

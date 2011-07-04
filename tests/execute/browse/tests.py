@@ -4729,7 +4729,7 @@ class Test45ExecFilterVerify(BaseSeleniumTestCase):
         except AssertionError, e: self.verificationErrors.append(str(e))
         try: self.failUnless(sel.is_text_present("Name"))
         except AssertionError, e: self.verificationErrors.append(str(e))
-        sel.select("id_control-new-group-add_group", "label=name")
+        sel.select("id_control-new-group-add_group", "label=Name")
         sel.wait_for_page_to_load("30000")
         for i in range(60):
             try:

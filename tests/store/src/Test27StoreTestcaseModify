@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://127.0.0.1:8000/" />
+<title>Test17StoreTestdirectCreate</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test17StoreTestdirectCreate</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/require/#requirement/1/details/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>exact:qualitio: requirements</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=store</td>
+	<td>store</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=store</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>MeeGo Netbook</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>exact:qualitio: store</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=MeeGo Handset bat</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>create test case directory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>create test case</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>create test case directory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>create test case</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div#application-view-footer div a span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>test case</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>new</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id_name</td>
+	<td>test case modification</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id_requirement</td>
+	<td>label=5: /MeeGo/MeeGo Handset</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id_status</td>
+	<td>label=Proposed</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id_description</td>
+	<td>testcase description</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id_precondition</td>
+	<td>test case precondition</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a#add-step-0 span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Step 1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id_steps-0-description</td>
+	<td>step1 description</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id_steps-0-expected</td>
+	<td>step 1 expected</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name='Executed'][value='Save']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>test case: test case modification</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=details</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=details</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=details</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>full name: /MeeGo Handset bat/test case modification</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>exact:parent:</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>test case: test case modification</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>full name: /MeeGo Handset bat/test case modification</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>parent: /MeeGo Handset bat/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=exact:5: /MeeGo/MeeGo Handset</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=exact:5: /MeeGo/MeeGo Handset</td>
+	<td>exact:5: /MeeGo/MeeGo Handset</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>description testcase description</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>test case precondition</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>step1 description</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>step 1 expected</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id_name</td>
+	<td>modify test case modification</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id_parent</td>
+	<td>label=1: /MeeGo Netbook</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id_requirement</td>
+	<td>label=2: /MeeGo/Notebook</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id_description</td>
+	<td>modify testcase description</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id_precondition</td>
+	<td>modify test case precondition</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id_steps-0-description</td>
+	<td>modify step1 description</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id_steps-0-expected</td>
+	<td>modify step 1 expected</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='testcase_form']/div[3]/div[2]/div[1]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Step 2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id_steps-1-description</td>
+	<td>step 2 description</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id_steps-1-expected</td>
+	<td>step 2 expected</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='testcase_form']/div[3]/div[3]/div[1]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Step 3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id_steps-2-description</td>
+	<td>step 3 decription</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id_steps-2-expected</td>
+	<td>step 3 expected</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name='Executed'][value='Save']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_description</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=details</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=details</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=details</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>test case: modify test case modification</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>full name: /MeeGo Netbook/modify test case modification</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>test case: modify test case modification</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>full name: /MeeGo Netbook/modify test case modification</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>parent: /MeeGo Netbook/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=exact:2: /MeeGo/Notebook</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=exact:2: /MeeGo/Notebook</td>
+	<td>exact:2: /MeeGo/Notebook</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>modify testcase description</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>modify test case precondition</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>modify step1 description</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>modify step 1 expected</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>step 2 description</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>step 2 expected</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>step 3 decription</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>step 3 expected</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='testcase_form']/div[3]/div[4]/div[1]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Step 4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Step 4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id_steps-3-description</td>
+	<td>step 4 description</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id_steps-3-expected</td>
+	<td>step 4 expected</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id_steps-1-DELETE</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name='Executed'][value='Save']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id_description</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=details</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=history</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=details</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>test case: modify test case modification</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>full name: /MeeGo Netbook/modify test case modification</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>parent: /MeeGo Netbook/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='application-view']/div[4]/div[2]/div[1]/div</td>
+	<td>modify step1 description</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='application-view']/div[4]/div[3]/div[1]/div</td>
+	<td>step 3 decription</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='application-view']/div[4]/div[4]/div[1]/div</td>
+	<td>step 4 description</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=history</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=history</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>date</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>user</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>comment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Changed name, changed requirement, changed description, changed precondition and changed parent. Added step &quot;2&quot;, added step &quot;3&quot; and changed description and expected for step &quot;1&quot;.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Added step &quot;4&quot; and deleted step &quot;2&quot;.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Changed name, changed requirement, changed description, changed precondition and changed parent. Added step &quot;1&quot;.</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

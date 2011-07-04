@@ -79,7 +79,7 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'qualitio.urls'
 
-LOGIN_REDIRECT_URL = "/require/"
+LOGIN_REDIRECT_URL = "/account/"
 LOGIN_URL = '/login/'
 
 LOGIN_EXEMPT_URLS = (
@@ -106,6 +106,8 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'django.contrib.webdesign',
+    'django.contrib.markup',
+    'django.contrib.humanize',
 
     'mptt',
     'debug_toolbar',
@@ -118,8 +120,10 @@ INSTALLED_APPS = (
     'compressor',
     'dbtemplates',
     'tastypie',
+    'articles',
 
     'qualitio.core',
+    'qualitio.core.custommodel',  # iternal core django application
     'qualitio.require',
     'qualitio.report',
     'qualitio.projects',
@@ -127,6 +131,8 @@ INSTALLED_APPS = (
     'qualitio.store',
     'qualitio.filter',
     'qualitio.glossary',
+
+    'qualitio.customizations',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = ("django.contrib.auth.context_processors.auth",
@@ -137,7 +143,8 @@ TEMPLATE_CONTEXT_PROCESSORS = ("django.contrib.auth.context_processors.auth",
                                "django.contrib.messages.context_processors.messages",
                                "qualitio.core.context_processors.settings",
                                "qualitio.core.context_processors.development",
-                               "qualitio.core.context_processors.core")
+                               "qualitio.core.context_processors.core",
+                               "qualitio.report.context_processors.bound_reports")
 
 AUTH_PROFILE_MODULE = 'projects.UserProfile'
 
