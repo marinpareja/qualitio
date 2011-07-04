@@ -75,7 +75,11 @@ add/remove one and then type commands:
 
 ::
 
+<<<<<<< HEAD
   $ ./Manage.py schemamigration customizations --auto
+=======
+  $ ./manage.py schemamigration customizations --auto
+>>>>>>> 94a9d75a0c18031600570d235c61347c090ea27c
   $ ./manage.py migrate
 
 

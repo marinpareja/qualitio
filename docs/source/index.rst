@@ -20,6 +20,10 @@ Contents:
 
    _qualitio_readme.rst
    custom_attributes
+<<<<<<< HEAD
+=======
+   filters
+>>>>>>> 94a9d75a0c18031600570d235c61347c090ea27c
    api
 
 
