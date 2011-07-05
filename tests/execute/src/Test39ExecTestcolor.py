@@ -95,13 +95,13 @@ class Test39ExecTestcolor(unittest.TestCase):
         sel.click("link=edit")
         for i in range(60):
             try:
-                if sel.is_element_present("id_testrun-name"): break
+                if sel.is_element_present("id_name"): break
             except: pass
             time.sleep(1)
         else: self.fail("time out")
         for i in range(60):
             try:
-                if sel.is_element_present("id_testrun-parent"): break
+                if sel.is_element_present("id_parent"): break
             except: pass
             time.sleep(1)
         else: self.fail("time out")
@@ -141,13 +141,13 @@ class Test39ExecTestcolor(unittest.TestCase):
         else: self.fail("time out")
         for i in range(60):
             try:
-                if sel.is_element_present("id_testrun-name"): break
+                if sel.is_element_present("id_name"): break
             except: pass
             time.sleep(1)
         else: self.fail("time out")
         for i in range(60):
             try:
-                if sel.is_element_present("id_testrun-parent"): break
+                if sel.is_element_present("id_parent"): break
             except: pass
             time.sleep(1)
         else: self.fail("time out")
@@ -174,13 +174,13 @@ class Test39ExecTestcolor(unittest.TestCase):
         else: self.fail("time out")
         for i in range(60):
             try:
-                if sel.is_element_present("//tr[@id='testcaserun_3']/td[2]"): break
+                if sel.is_element_present("//tr[@id='testcaserun_6']/td[2]"): break
             except: pass
             time.sleep(1)
         else: self.fail("time out")
-        try: self.failUnless(sel.is_element_present("//tr[@id='testcaserun_3']/td[2]"))
+        try: self.failUnless(sel.is_element_present("//tr[@id='testcaserun_6']/td[2]"))
         except AssertionError, e: self.verificationErrors.append(str(e))
-        sel.click("//tr[@id='testcaserun_3']/td[2]")
+        sel.click("//tr[@id='testcaserun_6']/td[2]")
         for i in range(60):
             try:
                 if sel.is_text_present("test case: TestCase1"): break
@@ -237,6 +237,17 @@ class Test39ExecTestcolor(unittest.TestCase):
         else: self.fail("time out")
         try: self.failUnless(sel.is_element_present("//tr[@style=\"background: none repeat scroll 0% 0% red;\"]"))
         except AssertionError, e: self.verificationErrors.append(str(e))
+        sel.click("//form[@id='testcaserun-status-form']/label[4]/span")
+        sel.click("id_status_3")
+        for i in range(60):
+            try:
+                if sel.is_element_present("//tr[@style=\"background: none repeat scroll 0% 0% red;\"]"): break
+            except: pass
+            time.sleep(1)
+        else: self.fail("time out")
+        try: self.failUnless(sel.is_element_present("//tr[@style=\"background: none repeat scroll 0% 0% red;\"]"))
+        except AssertionError, e: self.verificationErrors.append(str(e))
+        sel.click("//form[@id='testcaserun-status-form']/label[4]/span")
         sel.click("//form[@id='testcaserun-status-form']/label[1]/span")
         sel.click("id_status_0")
         for i in range(60):
@@ -268,11 +279,13 @@ class Test39ExecTestcolor(unittest.TestCase):
             except: pass
             time.sleep(1)
         else: self.fail("time out")
-        try: self.failUnless(sel.is_text_present("Test case run: 3: Changed status to 'passed'."))
+        try: self.failUnless(sel.is_text_present("Test case run: 6: Changed status to 'passed'."))
         except AssertionError, e: self.verificationErrors.append(str(e))
-        try: self.failUnless(sel.is_text_present("Test case run: 3: Changed status to 'failed'."))
+        try: self.failUnless(sel.is_text_present("Test case run: 6: Changed status to 'failed'."))
         except AssertionError, e: self.verificationErrors.append(str(e))
-        try: self.failUnless(sel.is_text_present("Test case run: 3: Changed status to 'idle'."))
+        try: self.failUnless(sel.is_text_present("Test case run: 6: Changed status to 'n/a'."))
+        except AssertionError, e: self.verificationErrors.append(str(e))
+        try: self.failUnless(sel.is_text_present("Test case run: 6: Changed status to 'idle'."))
         except AssertionError, e: self.verificationErrors.append(str(e))
         for i in range(60):
             try:
@@ -285,13 +298,13 @@ class Test39ExecTestcolor(unittest.TestCase):
         sel.click("link=edit")
         for i in range(60):
             try:
-                if sel.is_element_present("id_testrun-name"): break
+                if sel.is_element_present("id_name"): break
             except: pass
             time.sleep(1)
         else: self.fail("time out")
         for i in range(60):
             try:
-                if sel.is_element_present("id_testrun-parent"): break
+                if sel.is_element_present("id_parent"): break
             except: pass
             time.sleep(1)
         else: self.fail("time out")

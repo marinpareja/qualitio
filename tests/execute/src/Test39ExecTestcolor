@@ -228,17 +228,17 @@
 </tr>
 <tr>
 	<td>waitForElementPresent</td>
-	<td>//tr[@id='testcaserun_3']/td[2]</td>
+	<td>//tr[@id='testcaserun_6']/td[2]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyElementPresent</td>
-	<td>//tr[@id='testcaserun_3']/td[2]</td>
+	<td>//tr[@id='testcaserun_6']/td[2]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//tr[@id='testcaserun_3']/td[2]</td>
+	<td>//tr[@id='testcaserun_6']/td[2]</td>
 	<td></td>
 </tr>
 <tr>
@@ -248,7 +248,7 @@
 </tr>
 <tr>
 	<td>waitForTextPresent</td>
-	<td>parent: /MeeGo Netbook/MeeGo IVI BAT </td>
+	<td>parent: /MeeGo Netbook/MeeGo IVI BAT</td>
 	<td></td>
 </tr>
 <tr>
@@ -343,6 +343,31 @@
 </tr>
 <tr>
 	<td>click</td>
+	<td>//form[@id='testcaserun-status-form']/label[4]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id_status_3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//tr[@style=&quot;background: none repeat scroll 0% 0% red;&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//tr[@style=&quot;background: none repeat scroll 0% 0% red;&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='testcaserun-status-form']/label[4]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
 	<td>//form[@id='testcaserun-status-form']/label[1]/span</td>
 	<td></td>
 </tr>
@@ -388,17 +413,22 @@
 </tr>
 <tr>
 	<td>verifyTextPresent</td>
-	<td>Test case run: 3: Changed status to 'passed'.</td>
+	<td>Test case run: 6: Changed status to 'passed'.</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyTextPresent</td>
-	<td>Test case run: 3: Changed status to 'failed'.</td>
+	<td>Test case run: 6: Changed status to 'failed'.</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyTextPresent</td>
-	<td>Test case run: 3: Changed status to 'idle'.</td>
+	<td>Test case run: 6: Changed status to 'n/a'.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Test case run: 6: Changed status to 'idle'.</td>
 	<td></td>
 </tr>
 <tr>

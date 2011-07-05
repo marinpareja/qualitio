@@ -2306,8 +2306,12 @@ class Test38ExecConnecttestname(BaseSeleniumTestCase):
 
 class Test39ExecTestcolor(BaseSeleniumTestCase):
     
+    def setUp(self):
+        self.verificationErrors = []
+        self.selenium = selenium("localhost", 4444, "*chrome", "http://127.0.0.1:8000/")
+        self.selenium.start()
+    
     def test_39_exec_testcolor(self):
-        self.login()
         sel = self.selenium
         sel.open("/require/#requirement/1/details/")
         self.assertEqual("qualitio: requirements", sel.get_title())
@@ -2474,13 +2478,13 @@ class Test39ExecTestcolor(BaseSeleniumTestCase):
         else: self.fail("time out")
         for i in range(60):
             try:
-                if sel.is_element_present("//tr[@id='testcaserun_3']/td[2]"): break
+                if sel.is_element_present("//tr[@id='testcaserun_6']/td[2]"): break
             except: pass
             time.sleep(1)
         else: self.fail("time out")
-        try: self.failUnless(sel.is_element_present("//tr[@id='testcaserun_3']/td[2]"))
+        try: self.failUnless(sel.is_element_present("//tr[@id='testcaserun_6']/td[2]"))
         except AssertionError, e: self.verificationErrors.append(str(e))
-        sel.click("//tr[@id='testcaserun_3']/td[2]")
+        sel.click("//tr[@id='testcaserun_6']/td[2]")
         for i in range(60):
             try:
                 if sel.is_text_present("test case: TestCase1"): break
@@ -2537,6 +2541,17 @@ class Test39ExecTestcolor(BaseSeleniumTestCase):
         else: self.fail("time out")
         try: self.failUnless(sel.is_element_present("//tr[@style=\"background: none repeat scroll 0% 0% red;\"]"))
         except AssertionError, e: self.verificationErrors.append(str(e))
+        sel.click("//form[@id='testcaserun-status-form']/label[4]/span")
+        sel.click("id_status_3")
+        for i in range(60):
+            try:
+                if sel.is_element_present("//tr[@style=\"background: none repeat scroll 0% 0% red;\"]"): break
+            except: pass
+            time.sleep(1)
+        else: self.fail("time out")
+        try: self.failUnless(sel.is_element_present("//tr[@style=\"background: none repeat scroll 0% 0% red;\"]"))
+        except AssertionError, e: self.verificationErrors.append(str(e))
+        sel.click("//form[@id='testcaserun-status-form']/label[4]/span")
         sel.click("//form[@id='testcaserun-status-form']/label[1]/span")
         sel.click("id_status_0")
         for i in range(60):
@@ -2568,11 +2583,13 @@ class Test39ExecTestcolor(BaseSeleniumTestCase):
             except: pass
             time.sleep(1)
         else: self.fail("time out")
-        try: self.failUnless(sel.is_text_present("Test case run: 3: Changed status to 'passed'."))
+        try: self.failUnless(sel.is_text_present("Test case run: 6: Changed status to 'passed'."))
         except AssertionError, e: self.verificationErrors.append(str(e))
-        try: self.failUnless(sel.is_text_present("Test case run: 3: Changed status to 'failed'."))
+        try: self.failUnless(sel.is_text_present("Test case run: 6: Changed status to 'failed'."))
         except AssertionError, e: self.verificationErrors.append(str(e))
-        try: self.failUnless(sel.is_text_present("Test case run: 3: Changed status to 'idle'."))
+        try: self.failUnless(sel.is_text_present("Test case run: 6: Changed status to 'n/a'."))
+        except AssertionError, e: self.verificationErrors.append(str(e))
+        try: self.failUnless(sel.is_text_present("Test case run: 6: Changed status to 'idle'."))
         except AssertionError, e: self.verificationErrors.append(str(e))
         for i in range(60):
             try:
@@ -2613,8 +2630,9 @@ class Test39ExecTestcolor(BaseSeleniumTestCase):
         else: self.fail("time out")
         sel.click("//div[@id='application-view-footer']/div/input")
     
-
-
+    def tearDown(self):
+        self.selenium.stop()
+        self.assertEqual([], self.verificationErrors)
 
 class Test040ExecAddbug(BaseSeleniumTestCase):
     
